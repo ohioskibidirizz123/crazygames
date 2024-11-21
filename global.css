@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://uproxx.com/wp-content/uploads/2022/05/Lil-Durk.jpeg?w=1024&h=436&crop=1') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 20%;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff9900;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e68a00;
+}
+
+/* Explore Section */
+#explore {
+    padding: 50px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+#explore h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#explore p {
+    font-size: 1.2rem;
+}
+
+/* Apps Section */
+#apps {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.app-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.app {
+    width: 200px;
+    text-align: center;
+}
+
+.app img {
+    width: 100%;
+    height: auto;
+}
+
+.app h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.app p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Games Section */
+#games {
+    padding: 50px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.game {
+    width: 200px;
+    text-align: center;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+}
+
+.game h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.game p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-list, .game-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app, .game {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
