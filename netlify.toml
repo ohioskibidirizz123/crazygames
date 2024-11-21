@@ -1,0 +1,8 @@
+[build]
+  publish = "build"  # Directory to publish (Netlify defaults to "build" folder for most frameworks)
+  command = "npm run build"  # Optional build command if you’re using a build system (not needed for static HTML)
+
+[[redirects]]
+  from = "/old-page"
+  to = "/new-page"
+  status = 301
