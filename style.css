@@ -8,8 +8,9 @@
 /* Set background image */
 body {
     font-family: Arial, sans-serif;
-    background: url('assets/background.jpg') no-repeat center center fixed;
+    background: url('https://uproxx.com/wp-content/uploads/2022/05/Lil-Durk.jpeg?w=1024&h=436&crop=1') no-repeat center center fixed;
     background-size: cover;
+    color: white; /* Text color for better readability */
 }
 
 /* Header Styles */
@@ -46,17 +47,19 @@ header {
 }
 
 .cta-button {
-    background-color: #ff9900;
+    background-color: white; /* Button background color */
     padding: 10px 20px;
-    color: white;
+    color: #333; /* Dark text color for visibility */
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
     transition: background-color 0.3s;
+    border: 2px solid #fff; /* Optional: Add a border to make the button stand out */
 }
 
 .cta-button:hover {
-    background-color: #e68a00;
+    background-color: #f1f1f1; /* Light grey on hover */
+    color: #000; /* Dark text on hover */
 }
 
 /* Explore Section */
@@ -161,5 +164,3 @@ footer {
         margin-bottom: 20px;
     }
 }
-
-
