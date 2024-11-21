@@ -1,20 +1,12 @@
 {
   "name": "freelildurk-website",
   "version": "1.0.0",
-  "description": "A simple website for freelildurk.io with HTML, CSS, and JavaScript",
+  "description": "A simple static website",
   "main": "index.html",
   "scripts": {
-    "start": "live-server",
-    "build": "echo 'Build completed!'",
-    "deploy": "echo 'Deploying to Netlify...'"
+    "build": "parcel build index.html --out-dir build"
   },
-  "author": "Your Name",
-  "license": "MIT",
-  "dependencies": {
-    "live-server": "^1.2.1"
-  },
-  "devDependencies": {},
-  "engines": {
-    "node": ">=12.0.0"
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
