@@ -4,7 +4,7 @@
   "description": "A simple static website",
   "main": "index.html",
   "scripts": {
-    "build": npm run build"
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
