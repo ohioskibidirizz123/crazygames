@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freelildurk.io</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Your external stylesheets (only include if necessary) -->
+    <link rel="stylesheet" href="/assets/css/global.css?v=6" />
+    <link rel="stylesheet" href="/assets/css/container.css?v=2" />
+    <link rel="stylesheet" href="/assets/css/nav.css?v=01" />
+    <script src="assets/js/f.js"></script> <!-- Only include if it's needed -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6840529569014734" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -23,18 +29,49 @@
         <p>Lil Durk is king</p>
     </section>
 
-    <!-- Apps Section -->
+    <!-- Apps Section (Updated) -->
     <section id="apps">
         <h2>Our Apps</h2>
+        <!-- Search and Category Dropdown -->
+        <div class="input-c">
+            <input
+                type="text"
+                id="search"
+                onkeyup="bar()"
+                placeholder="Search"
+            />
+            <select
+                title="Category"
+                id="category"
+                name="category"
+                onchange="category()"
+            >
+                <option value="all">&#65;&#108;&#108;</option>
+                <option value="android">&#65;&#110;&#100;&#114;&#111;&#105;&#100;&#32;&#69;&#109;&#117;&#108;&#97;&#116;&#111;&#114;</option>
+                <option value="social">&#83;&#111;&#99;&#105;&#97;&#108;</option>
+                <option value="stream">&#83;&#116;&#114;&#101;&#97;&#109;</option>
+                <option value="message">&#77;&#101;&#115;&#115;&#97;&#103;&#101;</option>
+                <option value="media">&#84;&#86;&#32;&amp;&#32;&#77;&#111;&#118;&#105;&#101;&#115;</option>
+                <option value="game">&#71;&#97;&#109;&#101;&#32;&#83;&#105;&#116;&#101;&#115;</option>
+                <option value="cloud">&#67;&#108;&#111;&#117;&#100;&#32;&#71;&#97;&#109;&#105;&#110;&#103;</option>
+                <option value="tool">&#84;&#111;&#111;&#108;&#115;</option>
+                <option value="ai">&#65;&#73;</option>
+                <option value="emu">&#69;&#109;&#117;&#108;&#97;&#116;&#111;&#114;</option>
+                <option value="mail">&#77;&#97;&#105;&#108;</option>
+            </select>
+        </div>
+
+        <!-- Pinned Apps (optional content, this could be dynamically filled later) -->
+        <div class="pinned"></div>
+
+        <!-- Apps List (Existing apps from your HTML) -->
         <div class="app-list">
-            <!-- App 1 -->
             <div class="app">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuteTK8S2zz4mzQWxLyaSLa-CKamaoXGo4NA&s" alt="App 1 Icon">
+                <img src="assets/app1-icon.jpg" alt="App 1 Icon">
                 <h3>App 1</h3>
-                <p>watch movies</p>
-                <a href="https://watchdocumentaries.com/" class="cta-button">Download</a>
+                <p>Description of App 1 goes here.</p>
+                <a href="https://example.com/app1" class="cta-button">Download</a>
             </div>
-            <!-- App 2 -->
             <div class="app">
                 <img src="assets/app2-icon.jpg" alt="App 2 Icon">
                 <h3>App 2</h3>
@@ -44,18 +81,41 @@
         </div>
     </section>
 
-    <!-- Games Section -->
+    <!-- Games Section (Updated with your code) -->
     <section id="games">
         <h2>Our Games</h2>
+        <!-- Search and Category Dropdown (for games) -->
+        <div class="input-c">
+            <input
+                type="text"
+                id="search"
+                onkeyup="bar()"
+                placeholder="Search"
+            />
+            <select id="category" name="category" onchange="category()">
+                <option value="all">&#65;&#108;&#108;</option>
+                <option value="android">&#65;&#110;&#100;&#114;&#111;&#105;&#100;&#32;&#69;&#109;&#117;&#108;&#97;&#116;&#111;&#114;</option>
+                <option value="2P">&#77;&#117;&#108;&#116;&#105;&#112;&#108;&#97;&#121;&#101;&#114;</option>
+                <option value="sports">&#83;&#112;&#111;&#114;&#116;&#115;</option>
+                <option value="flash">&#70;&#108;&#97;&#115;&#104;</option>
+                <option value="emu">&#69;&#109;&#117;&#108;&#97;&#116;&#111;&#114;</option>
+                <option value="local">&#76;&#111;&#99;&#97;&#108;</option>
+            </select>
+        </div>
+
+        <!-- Pinned Games (optional content, this could be dynamically filled later) -->
+        <div class="pinned"></div>
+
+        <!-- Game List -->
         <div class="game-list">
-            <!-- Game 1 -->
+            <!-- Example Game 1 -->
             <div class="game">
                 <img src="assets/game1-icon.jpg" alt="Game 1 Icon">
                 <h3>Game 1</h3>
                 <p>Description of Game 1 goes here.</p>
                 <a href="https://example.com/game1" class="cta-button" target="_blank">Play Now</a>
             </div>
-            <!-- Game 2 -->
+            <!-- Example Game 2 -->
             <div class="game">
                 <img src="assets/game2-icon.jpg" alt="Game 2 Icon">
                 <h3>Game 2</h3>
@@ -70,7 +130,21 @@
         <p>&copy; 2024 freelildurk.io. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript Files (Ensure only necessary ones are included) -->
+    <script src="assets/js/i.js?v=02"></script>
+    <script src="assets/js/c.js?v=05"></script>
+    <script src="/assets/js/m.js?v=08"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKJQ5QHQTJ"></script>
+
+    <!-- Google Analytics Script -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-WKJQ5QHQTJ");
+    </script>
 </body>
 </html>
 
