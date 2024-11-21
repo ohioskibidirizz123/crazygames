@@ -8,7 +8,7 @@
 /* Set background image */
 body {
     font-family: Arial, sans-serif;
-    background: url('https://uproxx.com/wp-content/uploads/2022/05/Lil-Durk.jpeg?w=1024&h=436&crop=1') no-repeat center center fixed;
+    background: url('assets/background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -161,4 +161,5 @@ footer {
         margin-bottom: 20px;
     }
 }
+
 
