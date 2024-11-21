@@ -1,0 +1,11 @@
+freelildurk-website/
+  ├── index.html
+  ├── style.css
+  ├── script.js
+  ├── assets/
+  │    ├── space-background.jpg
+  │    ├── app1-icon.jpg
+  │    ├── app2-icon.jpg
+  │    ├── game1-icon.jpg
+  │    └── game2-icon.jpg
+  └── netlify.toml (optional)
